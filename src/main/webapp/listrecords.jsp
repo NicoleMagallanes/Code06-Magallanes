@@ -35,6 +35,10 @@
 						<input name="recordId" type="text" value="<%= records.getInt("id")%>" />
 						<input type="submit" value="DELETE RECORD"/> <!-- Logically Delete the data (not hard delete) -->
 					</form>
+					<form action="updaterecord.action" method="post">
+						<input name="recordId" type="text" value="<%= records.getInt("id")%>" />
+						<input type="submit" value="UPDATE"/> <!-- Logically Delete the data (not hard delete) -->
+					</form>
 				</td>
 			</tr>
 		<% } %>
